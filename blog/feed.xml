@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mediumish</title>
-    <description>Jekyll template, Medium styled, free for bloggers.</description>
+    <title>𝔸𝕀trify</title>
+    <description>We vision the world engineered by 𝔸𝕀.</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Jun 2019 00:03:31 +0200</pubDate>
-    <lastBuildDate>Fri, 14 Jun 2019 00:03:31 +0200</lastBuildDate>
+    <pubDate>Sat, 15 Jun 2019 01:02:26 +0200</pubDate>
+    <lastBuildDate>Sat, 15 Jun 2019 01:02:26 +0200</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
