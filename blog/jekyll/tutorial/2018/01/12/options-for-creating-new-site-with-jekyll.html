@@ -316,24 +316,83 @@
     <div class="container">
         <div id="comments" class="row justify-content-center mb-5">
             <div class="col-md-8">
-                <section class="disqus">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'demowebsite'; 
-        var disqus_developer = 0;
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
+                  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=168442633825943";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+                <!--
+<div class="buttons">
+<div style="width: 100%">
+    <button class="buttons1" onclick="openComment(event, 'Facebook')" id="defaultOpen"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></button>
+    <button class="buttons2" onclick="openComment(event, 'Disqus')"><i class="fa fa-commenting-o fa-3x" aria-hidden="true"></i></button>
+</div>
+</div>
+-->
+<div id="Facebook" class="tabcontent">
+    <div class="fb-comments" data-href="http://localhost:4000/jekyll/tutorial/2018/01/12/options-for-creating-new-site-with-jekyll.html" data-width="auto" data-numposts="10"></div>
+</div>
+<!--
+<div id="Disqus" class="tabcontent">
+    <div class="comment-wrapper">
+        
+    </div>
+</div>
+<div id="Google+" class="tabcontent">
+    <script src="https://apis.google.com/js/plusone.js">
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
+    <div id="google_comments"></div>
+    <script>
+    gapi.comments.render('google_comments', {
+        href: window.location,
+        width: '900',
+        height: '200',
+        first_party_property: 'BLOGGER',
+        view_type: 'FILTERED_POSTMOD'
+    });
+    </script>
+</div>
+-->
+<script>
+function openComment(evt, CommentName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(CommentName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<!--
+<style>
+.buttons {
+    background-color: black; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+</style>
+-->
 
             </div>
         </div>
     </div>
+
 
 <!--End Comments
 ================================================== -->
@@ -341,6 +400,7 @@
 <!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
 https://search.google.com/structured-data/testing-tool/u/0/
 ================================================== -->
+
 
 </div>
 
