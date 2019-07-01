@@ -4,16 +4,18 @@
 
     if (results.length) { // Are there any results?
       var appendString = '';
-
+      appendString += '<div class="col-md-8 pr-5"><h1>Search result for "'+searchTerm+'"</h1><br>'
       for (var i = 0; i < results.length; i++) {  // Iterate over the results
         var post = store[results[i].ref];        
-        appendString += '<li><a href="' + post.url + '"><h3>' + post.title+ '</h3></a>';
-        //appendString += '<div class="row listrecent">{% include postbox.html %}</div>';
+        appendString += '<a href="' + post.url + '"><h3>' + post.title+ '</h3></a>';
+        appendString +=   "<p>" + post.content.substring(0, 200) + " ...</p> <hr>";
+        //appendString += '<div class="row listrecent">{% include postbox.html %}</div>'; move to script maybe
       }
+      appendString +=   "</div>";
 
       searchResults.innerHTML = appendString;
     } else {
-      searchResults.innerHTML = '<li>No results found</li>';
+      searchResults.innerHTML = '<li>No results found for "'+searchTerm+'"</li>';
     }
   }
 
