@@ -1,0 +1,77 @@
+---
+layout: default
+title: Blog
+description: All amazing posts of SnapCats blog.
+image: assets/img/bg2.jpeg
+---
+<div class="main main-raised">
+  <div class="section section-basic">
+    <hr>
+    <div class="container">
+
+
+
+    <div class="row"><hr>
+{% for post in site.posts limit: 3 %}
+<div class="col-sm-4">
+ <div class="card card-signup">
+
+   <div class="header header-primary text-center">
+       <h4><a style="color:white" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+   </div>
+   <img style="display: block; margin-left: auto; margin-right: auto;" src="{{ site.baseurl }}/{{ post.image }}" alt="Raised Image" class="img-rounded img-responsive img-raised">
+   <div class="content text-center">
+     <p>{{ post.excerpt }}...</p>
+     <div class="footer text-center">
+       <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-primary btn-lg">Read More</a>
+     </div>
+   </div>
+ </div>
+</div>
+{% endfor %}
+          </div><!--/row--><hr>
+          <div class="row hidden-phone spacer50"></div>
+          <div class="row"><hr>
+{% for post in site.posts limit: 3 offset: 3 %}
+<div class="col-sm-4">
+ <div class="card card-signup">
+
+   <div class="header header-primary text-center">
+       <h4><a style="color:white" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+   </div>
+   <img style="display: block; margin-left: auto; margin-right: auto;" src="{{ site.baseurl }}/{{ post.image }}" alt="Raised Image" class="img-rounded img-responsive img-raised">
+   <div class="content text-center">
+     <p>{{ post.excerpt }}...</p>
+     <div class="footer text-center">
+       <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-primary btn-lg">Read More</a>
+     </div>
+   </div>
+ </div>
+</div>
+{% endfor %}
+          </div><!--/row--><hr>
+          <div class="row hidden-phone spacer50"></div>
+          <div class="row">
+{% for post in site.posts limit: 3 offset: 6 %}
+<div class="col-sm-4">
+ <div class="card card-signup">
+
+   <div class="header header-primary text-center">
+       <h4><a style="color:white" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+   </div>
+   <img style="display: block; margin-left: auto; margin-right: auto;" src="{{ site.baseurl }}/{{ post.image }}" alt="Raised Image" class="img-rounded img-responsive img-raised">
+   <div class="content text-center">
+     <p>{{ post.excerpt }}...</p>
+     <div class="footer text-center">
+       <a href="{{ site.baseurl }}{{ post.url }}" class="btn btn-primary btn-lg">Read More</a>
+     </div>
+   </div>
+ </div>
+</div>
+{% endfor %}
+          </div>
+
+   </div>
+  </div>
+ </div>
+</div>

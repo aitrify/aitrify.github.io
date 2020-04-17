@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body class="profile-page">
+
+    {% include nav.html %}
+
+
+  <div class="wrapper">
+  <div class="header header-filter" style="background-image: url('{{ site.baseurl }}/{{ page.image }}');"></div>
+
+  <div class="main main-raised">
+    <div class="profile-content">
+            <div class="container">
+                <div class="row">
+                    <div class="profile">
+                        <div class="avatar">
+                            <img src="../assets/img/christian.jpg" alt="Circle Image" class="img-circle img-responsive img-raised">
+                        </div>
+                        <div class="name">
+                            <h3 class="title">Christian Louboutin</h3>
+              <h6>Designer</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="description text-center">
+                      <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
+                </div>
+
+
+      {{ content }}
+    </div>
+
+    <footer class="footer">
+	    <div class="container">
+	        <nav class="pull-left">
+	            <ul>
+					<li>
+						<a href="http://www.creative-tim.com">
+							Creative Tim
+						</a>
+					</li>
+					<li>
+						<a href="http://presentation.creative-tim.com">
+						   About Us
+						</a>
+					</li>
+					<li>
+						<a href="http://blog.creative-tim.com">
+						   Blog
+						</a>
+					</li>
+					<li>
+						<a href="http://www.creative-tim.com/license">
+							Licenses
+						</a>
+					</li>
+	            </ul>
+	        </nav>
+	        <div class="copyright pull-right">
+	            &copy; 2016, made with <i class="material-icons">favorite</i> by Antonio Trento for a better web.
+	        </div>
+	    </div>
+	</footer>
+</div>
+
+    {% include modal.html %}
+    {% include analytics.html %}
+  </body>
+  {% include scripts.html %}
+</html>

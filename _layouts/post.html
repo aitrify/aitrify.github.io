@@ -1,0 +1,100 @@
+---
+layout: default-post
+---
+<div class="main main-raised">
+  <div class="section section-basic">
+    <hr>
+    <!-- Navbar Primary  -->
+    <nav class="navbar navbar-primary">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-primary">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand">Written on <i class="material-icons">query_builder</i> {{ page.date | date: "%B %e, %Y" }}</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="example-navbar-primary">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+                              <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
+                <i class="fa fa-facebook-square"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+                <i class="fa fa-twitter"></i>
+                              </a>
+                          </li>
+            <li>
+                              <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">
+                <i class="fa fa-google-plus"></i>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}%20{{ page.description }}&source=LinkedIn" rel="nofollow" target="_blank" title="Share on LinkedIn">
+                <i class="fa fa-linkedin"></i>
+                              </a>
+                          </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar Primary -->
+
+
+      <div id="post" class="container">
+      <article class="post">
+        <h2>{{ page.title }}</h2>
+
+        <div class="entry">
+          {{ content }}
+        </div>
+          <hr>
+            <div class="row sharing-area text-center">
+                    <h3>Thank you for supporting us!</h3>
+                    <a class="btn btn-twitter" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
+                        <i class="fa fa-twitter"></i>
+                        Tweet
+                    </a>
+                    <a class="btn btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">
+                        <i class="fa fa-facebook-square"></i>
+                        Share
+                    </a>
+          <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+" class="btn btn-google-plus">
+                        <i class="fa fa-google-plus"></i>
+                        Post
+                    </a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}%20{{ page.description }}&source=LinkedIn" class="btn btn-linkedin"  rel="nofollow" target="_blank" title="Share on LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                      Impress
+                    </a>
+          </div><hr>
+        {% include disqus.html %}
+</article>
+</div>
+
+<!-- Navbar Primary  -->
+<nav class="navbar navbar-primary">
+  <div class="container">
+    <div class="navbar-header">
+      
+      <a class="navbar-brand" href="#pablo">Written on <i class="material-icons">query_builder</i> {{ page.date | date: "%B %e, %Y" }}</a>
+    </div>
+
+
+
+    </div>
+  </div>
+</nav>
+<!-- End Navbar Primary -->
+
+
+</div>
+
+
+</div>

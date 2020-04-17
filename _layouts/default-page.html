@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body class="landing-page">
+
+  {% include nav.html %}
+  
+  <div class="wrapper">
+      <div class="header header-filter" style="background-image: url('{{ site.baseurl }}/{{ page.image }}');">
+          <div class="container">
+              <div class="row">
+        <div class="col-md-6">
+          <h1 class="title">{{ page.title }}</h1>
+                    <h4>{{ page.description }}</h4>
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-danger btn-raised btn-lg">
+            <i class="fa fa-play"></i> Watch video
+          </a>
+        </div>
+              </div>
+          </div>
+      </div>
+
+      {{ content }}
+    </div>
+
+    <footer class="footer">
+	    <div class="container">
+	        <nav class="pull-left">
+	            <ul>
+					<li>
+						<a href="http://www.creative-tim.com">
+							Creative Tim
+						</a>
+					</li>
+					<li>
+						<a href="http://presentation.creative-tim.com">
+						   About Us
+						</a>
+					</li>
+					<li>
+						<a href="http://blog.creative-tim.com">
+						   Blog
+						</a>
+					</li>
+					<li>
+						<a href="http://www.creative-tim.com/license">
+							Licenses
+						</a>
+					</li>
+	            </ul>
+	        </nav>
+	        <div class="copyright pull-right">
+	            &copy; 2016, made with <i class="material-icons">favorite</i> by Antonio Trento for a better web.
+	        </div>
+	    </div>
+	</footer>
+</div>
+
+    {% include modal.html %}
+    {% include analytics.html %}
+  </body>
+  {% include scripts.html %}
+</html>
