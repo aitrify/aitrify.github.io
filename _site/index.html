@@ -52,7 +52,34 @@
   </head>
 
   <body class="index-page">
+	<!-- Button
+	================================================== -->
+	<style>
+	  #myBtn {
+		display: none;
+		position: fixed;
+		bottom: 10px;
+		right: 5px;
+		z-index: 9999;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		opacity:0.5;
+		cursor: pointer;    
+		  border-radius: 20%;
+		  padding: 0.2em 0.5em 0.2em 0.5em; /* adjust padding */
+		  line-height: initial !important; /* reset line-height */
+		  text-align:center;
+		border: yes;
+		border-width: thin;
+		border-style: solid;
+		border-color: gray;
+	}
 
+	#myBtn:hover {
+		opacity:0.7;
+	}      
+	</style>
   <!-- Navbar -->
 <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
   <div class="container">
@@ -78,10 +105,17 @@
       </div>
 
       <div class="collapse navbar-collapse" id="navigation-index">
-        <ul class="nav navbar-nav navbar-right">
-        <li>
+        <ul class="nav navbar-nav navbar-right">			
+		
+		<li class="nav-item active">
+		
           <a href="/">
-            <i class="material-icons">home</i> Home
+            <i class="material-icons">home</i>Home
+          </a>
+        </li>			
+		<li>
+          <a href="/about/">
+			<i class="material-icons">face</i>About
           </a>
         </li>
 <!--
@@ -96,12 +130,11 @@
           </a>
         </li>
 
-        <li>
-          <a href="/about">
-            <i class="material-icons">unarchive</i> About
-          </a>
-        </li>
 -->
+        <li>
+          <a></a>
+          
+        </li>
         <li>
           <a rel="tooltip" title="Follow me on Twitter" data-placement="bottom" href="https://twitter.com/aitrify" target="_blank" class="btn btn-white btn-simple btn-just-icon">
             <i class="fa fa-twitter"></i>
@@ -117,6 +150,11 @@
             <i class="fa fa-linkedin"></i>
           </a>
         </li>
+        <li>
+		  <a rel="tooltip" title="Send me an email" data-placement="bottom" href="mailto:contact@aitrify.be" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
 
         </ul>
       </div>
@@ -127,21 +165,26 @@
   
     <div class="wrapper">
       <div class="wrapper">
-      	<div class="header header-filter" style="background-image: url('/assets/img/post-bg-02.jpg');">
+      	<div class="header header-filter" style="background-image: url('/assets/img/post-bg-01.jpg');">
       		<div class="container">
       			<div class="row">
       				<div class="col-md-8 col-md-offset-2">
-      					<div class="brand">
-      						<h1>𝔸𝕀trify - Progress with quality</h1>
-      						<h3>Growth is an endlessly <em>iterative</em> <b>process</b>. Ultimately, it is the commitment to the <b>process</b> that will determine the <b>progress</b>.</h3>
+      					<div id="demo"class="brand">
+      						<script>
+							var w = window.innerWidth
+							|| document.documentElement.clientWidth
+							|| document.body.clientWidth;
+
+							var x = document.getElementById("demo");
+							if (w > 920){x.innerHTML = "<h1>𝔸𝕀trify - Progress with quality</h1><h3>Growth is an endlessly <em>iterative</em> <b>process</b>. Ultimately, it is the commitment to the <b>process</b> that will determine the <b>progress</b>.</h3>";}
+							else {x.innerHTML = "<h2>𝔸𝕀trify - Progress with quality</h2><h4>Growth is an endlessly <em>iterative</em> <b>process</b>. Ultimately, it is the commitment to the <b>process</b> that will determine the <b>progress</b>.</h4>";}
+							</script>
       					</div>
       				</div>
       			</div>
 
       		</div>
       	</div>
-
-
 
 
       <div class="main main-raised">
@@ -193,7 +236,7 @@
 			<div class="team">
 				<div class="row">
 					<div class="col-md-4">
-											<div class="team-player">
+											<div class="team-player"><hr>
 													<img src="../assets/img/electronic-suspension.jpg" alt="Thumbnail Image" class="img-raised img-circle">
 													<h4 class="title">Core component development<br />
 								<small class="text-muted">High-end automotive suspension development</small>
@@ -203,7 +246,7 @@
 											</div>
 									</div>
 									<div class="col-md-4">
-											<div class="team-player">
+											<div class="team-player"><hr>
 													<img src="../assets/img/crops.png" alt="Thumbnail Image" class="img-raised img-circle">
 													<h4 class="title">Clever Robots for Crops<br />
 								<small class="text-muted">Large-scale integrating FP7 EU research project</small>
@@ -214,7 +257,7 @@
 											</div>
 									</div>
 									<div class="col-md-4">
-											<div class="team-player">
+											<div class="team-player"><hr>
 													<img src="../assets/img/INCA6D.png" alt="Thumbnail Image" class="img-raised img-circle">
 													<h4 class="title">Modeling and identification of Cable Robots<br />
 								<small class="text-muted">Research project on Cable-Driven Parallel Robots</small>
@@ -228,7 +271,7 @@
 <div class="team">
 				<div class="row">
 									<div class="col-md-4">
-											<div class="team-player">
+											<div class="team-player"><hr>
 													<img src="../assets/img/self-driving-car.png" alt="Thumbnail Image" class="img-raised img-circle">
 													<h4 class="title">Self-Driving Car<br />
 								<small class="text-muted">Udacity Self-Driving Car Engineer Nanodegree</small>
@@ -239,25 +282,27 @@
 											</div>
 									</div>
 									<div class="col-md-4">
-											<div class="team-player">
+											<div class="team-player"><hr>
 													<img src="../assets/img/trading.png" alt="Thumbnail Image" class="img-raised img-circle">
 													<h4 class="title">Apply AI to Quantitative Trading<br />
 								<small class="text-muted">Udacity Artificial Intelligence for Trading Nanodegree</small>
 							</h4>
 													<p>From gathering basics of quantitative analysis, including data processing, trading signal generation, and portfolio management then using Python to work with historical stock data, develop trading strategies by using neural networks, NLP, and random forests, among other models, and construct a multi-factor model with optimization and backtesting</p>
 							<a href="https://github.com/t-thanh/ai4trading" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-github fa-2x"></i></a>
+							<a href="https://www.udacity.com/course/ai-for-trading--nd880" class="btn btn-simple btn-just-icon"><i class="fa fa-link fa-2x"></i></a>
 							<a href="https://www.youtube.com/watch?v=2acrWjhweNI" class="btn btn-simple btn-just-icon"><i class="fa fa-youtube-play fa-2x"></i></a>
 											</div>
 									</div>
 								
 					<div class="col-md-4">
-											<div class="team-player">
+											<div class="team-player"><hr>
 													<img src="../assets/img/rl.png" alt="Thumbnail Image" class="img-raised img-circle">
 													<h4 class="title">Deep Reinforcement Learning<br />
 								<small class="text-muted">Udacity Deep Reinforcement Learning Expert Nanodegree</small>
 							</h4>
 													<p>Gathering knowlegde on cutting-edge deep reinforcement learning algorithms—from Deep Q-Networks (DQN) to Deep Deterministic Policy Gradients (DDPG). Apply these concepts to train agents to walk, drive, interacting with others to perform other complex tasks, and build a robust portfolio of deep reinforcement learning projects..</p>
 							<a href="https://github.com/t-thanh/deep-reinforcement-learning" class="btn btn-simple btn-just-icon btn-default"><i class="fa fa-github fa-2x"></i></a>
+							<a href="https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893" class="btn btn-simple btn-just-icon"><i class="fa fa-link fa-2x"></i></a>
 							<a href="https://www.youtube.com/watch?v=j-evVVlb_-M" class="btn btn-simple btn-just-icon"><i class="fa fa-youtube-play fa-2x"></i></a>
 											</div>
 									</div>
@@ -270,32 +315,34 @@
 				<div class="section landing-section">
 							<div class="row">
 									<div class="col-md-8 col-md-offset-2">
-											<h2 class="text-center title">Work with us</h2>
-					<h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
-											<form class="contact-form">
+											<h2 class="text-center title">Stay in touch to learn how we can work together</h2>
+					<h4 class="text-center description">I'm open for challenges in the quest of searching progress and opening my network. Feel free to leave a message. Your privacy is crucial to me. Looking forward to partner with you.</h4>
+											<form action="https://www.elformo.com/forms/fc2374e1-f0fa-43ee-a7f2-01413f4aae25" method="post" accept-charset="UTF-8" class="contact-form">
 													<div class="row">
 															<div class="col-md-6">
 								<div class="form-group label-floating">
-									<label class="control-label">Your Name</label>
-									<input type="text" class="form-control">
+									<label class="control-label">Your Email</label>
+									<input  id="email" name="email" type="email" class="form-control">
 								</div>
 															</div>
+<!--
 															<div class="col-md-6">
 								<div class="form-group label-floating">
-									<label class="control-label">Your Email</label>
-									<input type="email" class="form-control">
+									<label class="control-label">Your Name (Optional)</label>
+									<input id="comment" name="comment" type="text" class="form-control">
 								</div>
 															</div>
+-->
 													</div>
 
 						<div class="form-group label-floating">
 							<label class="control-label">Your Message</label>
-							<textarea class="form-control" rows="4"></textarea>
+							<textarea id="comment" name="comment" class="form-control" rows="4"></textarea>
 						</div>
 
 													<div class="row">
 															<div class="col-md-4 col-md-offset-4 text-center">
-																	<button class="btn btn-primary btn-raised">
+																	<button id="submit" name="submit" type="Submit" class="btn btn-primary btn-raised">
 									Send Message
 								</button>
 															</div>
@@ -310,40 +357,50 @@
 </div>
 
     </div>
+	<!-- Go to Top
+	================================================== -->
 
-    <footer class="footer">
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x"></i>
+	</button>
+	<!-- Footer
+	================================================== -->
+        <footer class="footer">
 	    <div class="container">
 	        <nav class="pull-left">
 	            <ul>
-<!--
 					<li>
-						<a href="http://www.creative-tim.com">
-							Creative Tim
+						<a href="https://aitrify.be">
+							BE0729794841
 						</a>
 					</li>
 					<li>
-						<a href="http://presentation.creative-tim.com">
-						   About Us
-						</a>
+					  <a rel="tooltip" title="Follow me on Twitter" data-placement="bottom" href="https://twitter.com/aitrify" target="_blank" class="btn btn-dark btn-simple btn-just-icon">
+						<i class="fa fa-twitter"></i>
+					  </a>
 					</li>
 					<li>
-						<a href="http://blog.creative-tim.com">
-						   Blog
-						</a>
+					  <a rel="tooltip" title="Follow me on Github" data-placement="bottom" href="https://github.com/t-thanh/" target="_blank" class="btn btn-dark btn-simple btn-just-icon">
+						<i class="fa fa-github"></i>
+					  </a>
 					</li>
 					<li>
-						<a href="http://www.creative-tim.com/license">
-							Licenses
-						</a>
+					  <a rel="tooltip" title="Follow me on LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/tienthanh/" target="_blank" class="btn btn-dark btn-simple btn-just-icon">
+						<i class="fa fa-linkedin"></i>
+					  </a>
 					</li>
--->
+					<li>
+					  <a rel="tooltip" title="Send me an email" data-placement="bottom" href="mailto:contact@aitrify.be" target="_blank" class="btn btn-dark btn-simple btn-just-icon">
+						<i class="fa fa-envelope"></i>
+					  </a>
+					</li>
 	            </ul>
 	        </nav>
 	        <div class="copyright pull-right">
-	            &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="material-icons">favorite</i> by 𝔸𝕀trify.
+	            &copy; 2019-<script>document.write(new Date().getFullYear())</script>, made with <i class="material-icons">favorite</i> by 𝔸𝕀trify.
 	        </div>
 	    </div>
 	</footer>
+
 </div>
 
     <!-- Sart Modal -->
@@ -370,6 +427,29 @@
 <!--  End Modal -->
 
     
+
+    
+	<!-- Scripts Up button
+	================================================== -->
+
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		//// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  var $target = $('html,body');
+		  $target.animate({scrollTop: 0}, 500);
+		}    
+	</script>
 
   </body>
   <!--   Core JS Files   -->

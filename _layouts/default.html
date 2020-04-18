@@ -16,7 +16,34 @@
   </head>
 
   <body class="index-page">
+	<!-- Button
+	================================================== -->
+	<style>
+	  #myBtn {
+		display: none;
+		position: fixed;
+		bottom: 10px;
+		right: 5px;
+		z-index: 9999;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		opacity:0.5;
+		cursor: pointer;    
+		  border-radius: 20%;
+		  padding: 0.2em 0.5em 0.2em 0.5em; /* adjust padding */
+		  line-height: initial !important; /* reset line-height */
+		  text-align:center;
+		border: yes;
+		border-width: thin;
+		border-style: solid;
+		border-color: gray;
+	}
 
+	#myBtn:hover {
+		opacity:0.7;
+	}      
+	</style>
   {% include nav.html %}
   
     <div class="wrapper">
@@ -25,9 +52,16 @@
       		<div class="container">
       			<div class="row">
       				<div class="col-md-8 col-md-offset-2">
-      					<div class="brand">
-      						<h1>{{ page.title }}</h1>
-      						<h3>{{ page.description }}</h3>
+      					<div id="demo"class="brand">
+      						<script>
+							var w = window.innerWidth
+							|| document.documentElement.clientWidth
+							|| document.body.clientWidth;
+
+							var x = document.getElementById("demo");
+							if (w > 920){x.innerHTML = "<h1>{{ page.title }}</h1><h3>{{ page.description }}</h3>";}
+							else {x.innerHTML = "<h2>{{ page.title }}</h2><h4>{{ page.description }}</h4>";}
+							</script>
       					</div>
       				</div>
       			</div>
@@ -36,48 +70,43 @@
       	</div>
 
 
-
-
       {{ content }}
     </div>
+	<!-- Go to Top
+	================================================== -->
 
-    <footer class="footer">
-	    <div class="container">
-	        <nav class="pull-left">
-	            <ul>
-<!--
-					<li>
-						<a href="http://www.creative-tim.com">
-							Creative Tim
-						</a>
-					</li>
-					<li>
-						<a href="http://presentation.creative-tim.com">
-						   About Us
-						</a>
-					</li>
-					<li>
-						<a href="http://blog.creative-tim.com">
-						   Blog
-						</a>
-					</li>
-					<li>
-						<a href="http://www.creative-tim.com/license">
-							Licenses
-						</a>
-					</li>
--->
-	            </ul>
-	        </nav>
-	        <div class="copyright pull-right">
-	            &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="material-icons">favorite</i> by 𝔸𝕀trify.
-	        </div>
-	    </div>
-	</footer>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x"></i>
+	</button>
+	<!-- Footer
+	================================================== -->
+    {% include footer.html %}
 </div>
 
     {% include modal.html %}
     {% include analytics.html %}
+    
+	<!-- Scripts Up button
+	================================================== -->
+
+	<script>
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("myBtn").style.display = "block";
+			} else {
+				document.getElementById("myBtn").style.display = "none";
+			}
+		}
+
+		//// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  var $target = $('html,body');
+		  $target.animate({scrollTop: 0}, 500);
+		}    
+	</script>
+
   </body>
   {% include scripts.html %}
 </html>

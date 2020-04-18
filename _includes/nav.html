@@ -23,10 +23,19 @@
       </div>
 
       <div class="collapse navbar-collapse" id="navigation-index">
-        <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="/">
-            <i class="material-icons">home</i> Home
+        <ul class="nav navbar-nav navbar-right">			
+		{% if page.url == "/" %}
+		<li class="nav-item active">
+		{% else %}
+		<li>
+		{% endif %}
+          <a href="{{ site.homeurl }}">
+            <i class="material-icons">home</i>Home
+          </a>
+        </li>			
+		<li>
+          <a href="{{ site.baseurl }}/about/">
+			<i class="material-icons">face</i>About
           </a>
         </li>
 <!--
@@ -41,12 +50,11 @@
           </a>
         </li>
 
-        <li>
-          <a href="/about">
-            <i class="material-icons">unarchive</i> About
-          </a>
-        </li>
 -->
+        <li>
+          <a></a>
+          
+        </li>
         <li>
           <a rel="tooltip" title="Follow me on Twitter" data-placement="bottom" href="https://twitter.com/aitrify" target="_blank" class="btn btn-white btn-simple btn-just-icon">
             <i class="fa fa-twitter"></i>
@@ -60,6 +68,11 @@
         <li>
           <a rel="tooltip" title="Follow me on LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/tienthanh/" target="_blank" class="btn btn-white btn-simple btn-just-icon">
             <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+		  <a rel="tooltip" title="Send me an email" data-placement="bottom" href="mailto:contact@aitrify.be" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+            <i class="fa fa-envelope"></i>
           </a>
         </li>
 
