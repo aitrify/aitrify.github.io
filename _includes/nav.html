@@ -32,8 +32,12 @@
           <a href="{{ site.homeurl }}">
             <i class="material-icons">home</i>Home
           </a>
-        </li>			
+        </li>						
+		{% if page.url == "/about/" %}
+		<li class="nav-item active">
+		{% else %}
 		<li>
+		{% endif %}
           <a href="{{ site.baseurl }}/about/">
 			<i class="material-icons">face</i>About
           </a>
