@@ -3,51 +3,21 @@
       
       
     {
-      "title"    : "Magic number 4%",
+      "title"    : "The List of My Writings",
       "category" : "",
-      "tags"     : "thoughts",
-      "url"      : "/four_percents/",
-      "date"     : "2020-03-17 00:00:00 +0100"
+      "tags"     : "collection, list",
+      "url"      : "/the_list_of_my_writings/",
+      "date"     : "2020-04-22 00:00:00 +0200"
     } ,
   
       
       
     {
-      "title"    : "My Hobbies Profile",
+      "title"    : "The List of My Projects",
       "category" : "",
-      "tags"     : "hobbies, running, learning, reading, creating, foods, drinks",
-      "url"      : "/hobbies_profile/",
-      "date"     : "2020-03-14 00:00:00 +0100"
-    } ,
-  
-      
-      
-    {
-      "title"    : "Thói quen - làm sao để bắt đầu",
-      "category" : "",
-      "tags"     : "thoughts, habits",
-      "url"      : "/thoi_quen_bat_dau_tu_dau/",
-      "date"     : "2020-03-10 00:00:00 +0100"
-    } ,
-  
-      
-      
-    {
-      "title"    : "Marathon - như tôi nghĩ về nó",
-      "category" : "",
-      "tags"     : "running, thoughts, marathon",
-      "url"      : "/marathons_as_I_see_it/",
-      "date"     : "2020-03-07 00:00:00 +0100"
-    } ,
-  
-      
-      
-    {
-      "title"    : "Chạy bộ - như mình nghĩ về nó",
-      "category" : "",
-      "tags"     : "running, thoughts",
-      "url"      : "/running_as_I_see_it/",
-      "date"     : "2020-03-03 00:00:00 +0100"
+      "tags"     : "project, list",
+      "url"      : "/the_list_of_my_projects/",
+      "date"     : "2020-04-22 00:00:00 +0200"
     } 
   
 ]
