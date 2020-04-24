@@ -5,9 +5,75 @@
     <description>Progress with quality</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 22 Apr 2020 02:09:32 +0200</pubDate>
-    <lastBuildDate>Wed, 22 Apr 2020 02:09:32 +0200</lastBuildDate>
+    <pubDate>Sat, 25 Apr 2020 00:53:01 +0200</pubDate>
+    <lastBuildDate>Sat, 25 Apr 2020 00:53:01 +0200</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>COVID-19 - What can we do to help?</title>
+        <description>&lt;p&gt;As I start this blog, COVID-19 is taking over the world, forcing most of us in a situation that we have never experienced before. We live in Belgium and right in the most damaged area. For previous month, our life was uprooted just as all of you: working from home, kids staying at home whole day, only go out for shopping once per week, … Thankfully, we are safe, and most of people in the small neighborhood also. Some advantages of this period to me: We allow to go out for running or cycling one per day: alone or with one family member - with respect to the social distancing restriction, which is perfect for my running. Even all the competition is cancelled, I can still practice and focus more on speed work. Moreover, isolation gives me precious time to think about my values, arrange my life, and having quality time with family - at home of course. That is why I open this blog, start writing and get back with my reading, learning further in data science and AI. Before starting all that, one of the question I asked myself is:&lt;/p&gt;
+&lt;h3 id=&quot;what-can-i-do-to-help-during-this-crisis&quot;&gt;What can I do to help during this crisis?&lt;/h3&gt;
+&lt;p&gt;As engineer, I want to help with my skills and my free time. You can read a lot of contribution from kids, from DYI person about making medical support parts from 3D printing. People in DIY forum sharing the design of DYI ventilator which you can make from Arduino, Raspberry Pi and wood and 3D printing part. I myself would like nothing more than to assist to solve this problem and help save lifes. But I don’t think home-made devices like above are answer at least in the hospital where I live. They have special protective equiments and don’t have any complain about lack of equiment yet, except the ICU beds. However, personally, I think medical devices and equiments are high standard, and intended for used by professional medical personnel, especially about the ventilator which is designed to maintain human life, without propoer testing and quality check, using improperly home-made devices could lead to fatal result.
+Other protective masks for regular person for example is different story, our city have plan just roll out today about giving reuseable masks to all the citizens for free. There are also other volunteering activities which I can join, and you too if it is possible, like: helping the seniors with groceries, maintain connection - with respect to social distancing rule they don’t feel isolation or loneliness, .. Other actions like donating to good cause organizations: food bank, COVID-19 research, helping nurses and doctors also help a lot during this period. I will also join some tele-conferences about COVID-19, data analysis to help prediction, finding solution in term of tracking patients, prevent broken social distancing rules …&lt;/p&gt;
+&lt;h3 id=&quot;what-can-robot-do-and-should-do-for-future-after-covid-19&quot;&gt;What can robot do and should do for future after COVID-19?&lt;/h3&gt;
+&lt;p&gt;COVID-19 will change the future and for sure it will speed up development and business in robotics.&lt;/p&gt;
+&lt;h4 id=&quot;in-laboratories&quot;&gt;In laboratories&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;There will be more and more researches for more and more dangerous virus than COVID-19, therefore laboratory automation is a must. Following in the product from ABB, YuMi mobile collaborative robot:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/SA_1vfH5UIk?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;How about specific robot for pipetting from Andrew Alliance SA:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/952yeU13NQA?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h4 id=&quot;in-hospitals&quot;&gt;In hospitals&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Tele-presence with Boston Dynamics Spot quadruped robot - why not now? Want to know more, go to their &lt;a href=&quot;https://github.com/boston-dynamics/bosdyn-hospital-bot/blob/master/Applications%20of%20Mobile%20Robotics%20during%20COVID-19.pdf&quot;&gt;github pdf report&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/sIp-FbLgnbE?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Hospital assistant Moxi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/9YUgz9d6xDE?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Or Social robot like Mabu - Personal health care companion&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/A3XwzlvOW7k?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;My take here: with the current hospital system, there is a long way for fully integration of the robot. As system engineer, I would design a full hospital automation system, where you have camera, sensors, and sound system for tele-presense and mornitor patient situation, and mobile carrier system to take care of logistics, and together with AI, and data analysis for helping the treatment.
+    &lt;h4 id=&quot;in-supermarket&quot;&gt;In supermarket&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Long overview about Retail robot from BBC&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/0e0fdD5DpEI?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h4 id=&quot;on-the-road-not-necessary-self-driving-car&quot;&gt;On the road, not necessary self-driving car&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Nuro R2 driverless vehicles is already heros during COVID-19&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/X8ZF49H_Y14?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h3 id=&quot;final-thought&quot;&gt;Final thought&lt;/h3&gt;
+&lt;p&gt;It is not eay time for all of us. My thought go to the nurses and doctors in the frontline, and COVID-19 victims and their families. For all of you, stay safe, stay positive, don’t let the virus break your routine, your connection with the world. It is time for your family, for yourselves, to learn new things, make new things.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 24 Apr 2020 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/Covid_19_What_can_we_help/</link>
+        <guid isPermaLink="true">http://localhost:4000/Covid_19_What_can_we_help/</guid>
+        
+        <category>robot</category>
+        
+        <category>health</category>
+        
+        <category>COVID-19</category>
+        
+        <category>retail</category>
+        
+        <category>laboratory</category>
+        
+        <category>w17-2020</category>
+        
+        
+        <category>robot</category>
+        
+      </item>
     
       <item>
         <title>The List of My Writings</title>

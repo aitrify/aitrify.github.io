@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/blogs/assets/images/favicon.ico">
+
+<title>COVID-19 - What can we do to help? | 𝔸𝕀trify</title>
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>COVID-19 - What can we do to help? | 𝔸𝕀trify</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="COVID-19 - What can we do to help?" />
+<meta name="author" content="tien-thanh" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As I start this blog, COVID-19 is taking over the world, forcing most of us in a situation that we have never experienced before. We live in Belgium and right in the most damaged area. For previous month, our life was uprooted just as all of you: working from home, kids staying at home whole day, only go out for shopping once per week, … Thankfully, we are safe, and most of people in the small neighborhood also. Some advantages of this period to me: We allow to go out for running or cycling one per day: alone or with one family member - with respect to the social distancing restriction, which is perfect for my running. Even all the competition is cancelled, I can still practice and focus more on speed work. Moreover, isolation gives me precious time to think about my values, arrange my life, and having quality time with family - at home of course. That is why I open this blog, start writing and get back with my reading, learning further in data science and AI. Before starting all that, one of the question I asked myself is: What can I do to help during this crisis? As engineer, I want to help with my skills and my free time. You can read a lot of contribution from kids, from DYI person about making medical support parts from 3D printing. People in DIY forum sharing the design of DYI ventilator which you can make from Arduino, Raspberry Pi and wood and 3D printing part. I myself would like nothing more than to assist to solve this problem and help save lifes. But I don’t think home-made devices like above are answer at least in the hospital where I live. They have special protective equiments and don’t have any complain about lack of equiment yet, except the ICU beds. However, personally, I think medical devices and equiments are high standard, and intended for used by professional medical personnel, especially about the ventilator which is designed to maintain human life, without propoer testing and quality check, using improperly home-made devices could lead to fatal result. Other protective masks for regular person for example is different story, our city have plan just roll out today about giving reuseable masks to all the citizens for free. There are also other volunteering activities which I can join, and you too if it is possible, like: helping the seniors with groceries, maintain connection - with respect to social distancing rule they don’t feel isolation or loneliness, .. Other actions like donating to good cause organizations: food bank, COVID-19 research, helping nurses and doctors also help a lot during this period. I will also join some tele-conferences about COVID-19, data analysis to help prediction, finding solution in term of tracking patients, prevent broken social distancing rules … What can robot do and should do for future after COVID-19? COVID-19 will change the future and for sure it will speed up development and business in robotics. In laboratories There will be more and more researches for more and more dangerous virus than COVID-19, therefore laboratory automation is a must. Following in the product from ABB, YuMi mobile collaborative robot: How about specific robot for pipetting from Andrew Alliance SA: In hospitals Tele-presence with Boston Dynamics Spot quadruped robot - why not now? Want to know more, go to their github pdf report Hospital assistant Moxi Or Social robot like Mabu - Personal health care companion My take here: with the current hospital system, there is a long way for fully integration of the robot. As system engineer, I would design a full hospital automation system, where you have camera, sensors, and sound system for tele-presense and mornitor patient situation, and mobile carrier system to take care of logistics, and together with AI, and data analysis for helping the treatment. In supermarket Long overview about Retail robot from BBC On the road, not necessary self-driving car Nuro R2 driverless vehicles is already heros during COVID-19 Final thought It is not eay time for all of us. My thought go to the nurses and doctors in the frontline, and COVID-19 victims and their families. For all of you, stay safe, stay positive, don’t let the virus break your routine, your connection with the world. It is time for your family, for yourselves, to learn new things, make new things." />
+<meta property="og:description" content="As I start this blog, COVID-19 is taking over the world, forcing most of us in a situation that we have never experienced before. We live in Belgium and right in the most damaged area. For previous month, our life was uprooted just as all of you: working from home, kids staying at home whole day, only go out for shopping once per week, … Thankfully, we are safe, and most of people in the small neighborhood also. Some advantages of this period to me: We allow to go out for running or cycling one per day: alone or with one family member - with respect to the social distancing restriction, which is perfect for my running. Even all the competition is cancelled, I can still practice and focus more on speed work. Moreover, isolation gives me precious time to think about my values, arrange my life, and having quality time with family - at home of course. That is why I open this blog, start writing and get back with my reading, learning further in data science and AI. Before starting all that, one of the question I asked myself is: What can I do to help during this crisis? As engineer, I want to help with my skills and my free time. You can read a lot of contribution from kids, from DYI person about making medical support parts from 3D printing. People in DIY forum sharing the design of DYI ventilator which you can make from Arduino, Raspberry Pi and wood and 3D printing part. I myself would like nothing more than to assist to solve this problem and help save lifes. But I don’t think home-made devices like above are answer at least in the hospital where I live. They have special protective equiments and don’t have any complain about lack of equiment yet, except the ICU beds. However, personally, I think medical devices and equiments are high standard, and intended for used by professional medical personnel, especially about the ventilator which is designed to maintain human life, without propoer testing and quality check, using improperly home-made devices could lead to fatal result. Other protective masks for regular person for example is different story, our city have plan just roll out today about giving reuseable masks to all the citizens for free. There are also other volunteering activities which I can join, and you too if it is possible, like: helping the seniors with groceries, maintain connection - with respect to social distancing rule they don’t feel isolation or loneliness, .. Other actions like donating to good cause organizations: food bank, COVID-19 research, helping nurses and doctors also help a lot during this period. I will also join some tele-conferences about COVID-19, data analysis to help prediction, finding solution in term of tracking patients, prevent broken social distancing rules … What can robot do and should do for future after COVID-19? COVID-19 will change the future and for sure it will speed up development and business in robotics. In laboratories There will be more and more researches for more and more dangerous virus than COVID-19, therefore laboratory automation is a must. Following in the product from ABB, YuMi mobile collaborative robot: How about specific robot for pipetting from Andrew Alliance SA: In hospitals Tele-presence with Boston Dynamics Spot quadruped robot - why not now? Want to know more, go to their github pdf report Hospital assistant Moxi Or Social robot like Mabu - Personal health care companion My take here: with the current hospital system, there is a long way for fully integration of the robot. As system engineer, I would design a full hospital automation system, where you have camera, sensors, and sound system for tele-presense and mornitor patient situation, and mobile carrier system to take care of logistics, and together with AI, and data analysis for helping the treatment. In supermarket Long overview about Retail robot from BBC On the road, not necessary self-driving car Nuro R2 driverless vehicles is already heros during COVID-19 Final thought It is not eay time for all of us. My thought go to the nurses and doctors in the frontline, and COVID-19 victims and their families. For all of you, stay safe, stay positive, don’t let the virus break your routine, your connection with the world. It is time for your family, for yourselves, to learn new things, make new things." />
+<link rel="canonical" href="http://localhost:4000/Covid_19_What_can_we_help/" />
+<meta property="og:url" content="http://localhost:4000/Covid_19_What_can_we_help/" />
+<meta property="og:site_name" content="𝔸𝕀trify" />
+<meta property="og:image" content="http://localhost:4000/assets/images/flattening-the-curve.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-24T00:00:00+02:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"tien-thanh"},"headline":"COVID-19 - What can we do to help?","dateModified":"2020-04-24T00:00:00+02:00","datePublished":"2020-04-24T00:00:00+02:00","image":"http://localhost:4000/assets/images/flattening-the-curve.jpg","url":"http://localhost:4000/Covid_19_What_can_we_help/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Covid_19_What_can_we_help/"},"author":{"@type":"Person","name":"tien-thanh"},"description":"As I start this blog, COVID-19 is taking over the world, forcing most of us in a situation that we have never experienced before. We live in Belgium and right in the most damaged area. For previous month, our life was uprooted just as all of you: working from home, kids staying at home whole day, only go out for shopping once per week, … Thankfully, we are safe, and most of people in the small neighborhood also. Some advantages of this period to me: We allow to go out for running or cycling one per day: alone or with one family member - with respect to the social distancing restriction, which is perfect for my running. Even all the competition is cancelled, I can still practice and focus more on speed work. Moreover, isolation gives me precious time to think about my values, arrange my life, and having quality time with family - at home of course. That is why I open this blog, start writing and get back with my reading, learning further in data science and AI. Before starting all that, one of the question I asked myself is: What can I do to help during this crisis? As engineer, I want to help with my skills and my free time. You can read a lot of contribution from kids, from DYI person about making medical support parts from 3D printing. People in DIY forum sharing the design of DYI ventilator which you can make from Arduino, Raspberry Pi and wood and 3D printing part. I myself would like nothing more than to assist to solve this problem and help save lifes. But I don’t think home-made devices like above are answer at least in the hospital where I live. They have special protective equiments and don’t have any complain about lack of equiment yet, except the ICU beds. However, personally, I think medical devices and equiments are high standard, and intended for used by professional medical personnel, especially about the ventilator which is designed to maintain human life, without propoer testing and quality check, using improperly home-made devices could lead to fatal result. Other protective masks for regular person for example is different story, our city have plan just roll out today about giving reuseable masks to all the citizens for free. There are also other volunteering activities which I can join, and you too if it is possible, like: helping the seniors with groceries, maintain connection - with respect to social distancing rule they don’t feel isolation or loneliness, .. Other actions like donating to good cause organizations: food bank, COVID-19 research, helping nurses and doctors also help a lot during this period. I will also join some tele-conferences about COVID-19, data analysis to help prediction, finding solution in term of tracking patients, prevent broken social distancing rules … What can robot do and should do for future after COVID-19? COVID-19 will change the future and for sure it will speed up development and business in robotics. In laboratories There will be more and more researches for more and more dangerous virus than COVID-19, therefore laboratory automation is a must. Following in the product from ABB, YuMi mobile collaborative robot: How about specific robot for pipetting from Andrew Alliance SA: In hospitals Tele-presence with Boston Dynamics Spot quadruped robot - why not now? Want to know more, go to their github pdf report Hospital assistant Moxi Or Social robot like Mabu - Personal health care companion My take here: with the current hospital system, there is a long way for fully integration of the robot. As system engineer, I would design a full hospital automation system, where you have camera, sensors, and sound system for tele-presense and mornitor patient situation, and mobile carrier system to take care of logistics, and together with AI, and data analysis for helping the treatment. In supermarket Long overview about Retail robot from BBC On the road, not necessary self-driving car Nuro R2 driverless vehicles is already heros during COVID-19 Final thought It is not eay time for all of us. My thought go to the nurses and doctors in the frontline, and COVID-19 victims and their families. For all of you, stay safe, stay positive, don’t let the virus break your routine, your connection with the world. It is time for your family, for yourselves, to learn new things, make new things.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/blogs/assets/css/screen.css" rel="stylesheet">
+
+<link href="/blogs/assets/css/main.css" rel="stylesheet">
+
+<script src="/blogs/assets/js/jquery.min.js"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8771990618714258",
+    enable_page_level_ads: true
+  });
+</script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<style>
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    opacity:0.5;
+    cursor: pointer;    
+      border-radius: 20%;
+      padding: 0.2em 0.5em 0.2em 0.5em; /* adjust padding */
+      line-height: initial !important; /* reset line-height */
+      text-align:center;
+    border: yes;
+    border-width: thin;
+    border-style: solid;
+    border-color: gray;
+}
+
+#myBtn:hover {
+    opacity:0.7;
+}      
+</style>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/blogs/assets/images/logo.png" alt="𝔸𝕀trify">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+                </li>
+                						
+				
+				<li class="nav-item">
+				
+                <a class="nav-link" href="/blogs">Blogs</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+<!--
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://twitter.com/aitrify"><i class="fab fa-twitter fa-lg"></i></a>
+                </li>
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.facebook.com/nttputus"><i class="fab fa-facebook-f fa-lg"></i></a>
+                </li>
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://github.com/t-thanh"><i class="fab fa-github fa-lg"></i></a>
+                </li>
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.linkedin.com/in/tienthanh/"><i class="fab fa-linkedin fa-lg"></i></a>
+                </li>
+-->
+
+                <form action="/blogs/search.html" method="get">
+    <input id="search-input" type="text" name="query" class="form-control text-small launch-modal-search" placeholder="Search..."/>
+</form>
+
+<script>
+  window.store = {
+    
+      
+      
+      "covid-19-what-can-we-help": {
+        "title": "COVID-19 - What can we do to help?",
+        "author": "tien-thanh",
+        "category": "",
+        "content": "As I start this blog, COVID-19 is taking over the world, forcing most of us in a situation that we have never experienced before. We live in Belgium and right in the most damaged area. For previous month, our life was uprooted just as all of you: working from home, kids staying at home whole day, only go out for shopping once per week, … Thankfully, we are safe, and most of people in the small neighborhood also. Some advantages of this period to me: We allow to go out for running or cycling one per day: alone or with one family member - with respect to the social distancing restriction, which is perfect for my running. Even all the competition is cancelled, I can still practice and focus more on speed work. Moreover, isolation gives me precious time to think about my values, arrange my life, and having quality time with family - at home of course. That is why I open this blog, start writing and get back with my reading, learning further in data science and AI. Before starting all that, one of the question I asked myself is:What can I do to help during this crisis?As engineer, I want to help with my skills and my free time. You can read a lot of contribution from kids, from DYI person about making medical support parts from 3D printing. People in DIY forum sharing the design of DYI ventilator which you can make from Arduino, Raspberry Pi and wood and 3D printing part. I myself would like nothing more than to assist to solve this problem and help save lifes. But I don’t think home-made devices like above are answer at least in the hospital where I live. They have special protective equiments and don’t have any complain about lack of equiment yet, except the ICU beds. However, personally, I think medical devices and equiments are high standard, and intended for used by professional medical personnel, especially about the ventilator which is designed to maintain human life, without propoer testing and quality check, using improperly home-made devices could lead to fatal result.Other protective masks for regular person for example is different story, our city have plan just roll out today about giving reuseable masks to all the citizens for free. There are also other volunteering activities which I can join, and you too if it is possible, like: helping the seniors with groceries, maintain connection - with respect to social distancing rule they don’t feel isolation or loneliness, .. Other actions like donating to good cause organizations: food bank, COVID-19 research, helping nurses and doctors also help a lot during this period. I will also join some tele-conferences about COVID-19, data analysis to help prediction, finding solution in term of tracking patients, prevent broken social distancing rules …What can robot do and should do for future after COVID-19?COVID-19 will change the future and for sure it will speed up development and business in robotics.In laboratories  There will be more and more researches for more and more dangerous virus than COVID-19, therefore laboratory automation is a must. Following in the product from ABB, YuMi mobile collaborative robot:  How about specific robot for pipetting from Andrew Alliance SA:In hospitals  Tele-presence with Boston Dynamics Spot quadruped robot - why not now? Want to know more, go to their github pdf report  Hospital assistant Moxi  Or Social robot like Mabu - Personal health care companion  My take here: with the current hospital system, there is a long way for fully integration of the robot. As system engineer, I would design a full hospital automation system, where you have camera, sensors, and sound system for tele-presense and mornitor patient situation, and mobile carrier system to take care of logistics, and together with AI, and data analysis for helping the treatment.    In supermarket    Long overview about Retail robot from BBCOn the road, not necessary self-driving car  Nuro R2 driverless vehicles is already heros during COVID-19Final thoughtIt is not eay time for all of us. My thought go to the nurses and doctors in the frontline, and COVID-19 victims and their families. For all of you, stay safe, stay positive, don’t let the virus break your routine, your connection with the world. It is time for your family, for yourselves, to learn new things, make new things.",
+        "url": "/Covid_19_What_can_we_help/"
+      }
+      ,
+    
+      
+      
+      "the-list-of-my-writings": {
+        "title": "The List of My Writings",
+        "author": "tien-thanh",
+        "category": "",
+        "content": "This list is organized by categories and time and update frequently. There is a dropdown in the menu bar for specific category and almost serve the same objectives. This blog is the first of many blogs in my website so I hope there will be long blog for this one. Have fun reading.AI &amp; Data ScienceRoboticsEngineeringPersonal Thoughts",
+        "url": "/the_list_of_my_writings/"
+      }
+      ,
+    
+      
+      
+      "the-list-of-my-projects": {
+        "title": "The List of My Projects",
+        "author": "tien-thanh",
+        "category": "",
+        "content": "I will publish one project at the end of the month. In the beginning, I had quite a bunch of previous projects to show so there would be the matter of writing, however, when they run out, creating a new one may take quite sometime, but I will keep updating the progress for each month. So stay tuned.",
+        "url": "/the_list_of_my_projects/"
+      }
+      
+    
+  };
+</script>
+
+<script src="/blogs/assets/js/lunr.min.js"></script>
+<script src="/blogs/assets/js/search.js"></script>
+
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+<!--
+<style>
+/* Container holding the image and the text */
+.container_topbackground {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 4px;
+  left: 16px;
+}
+</style>
+<div class="mainheading">
+	<div class="container_topbackground">
+	  <img src="/blogs/assets/images/top1.jpg" alt="background" style="width:100%; border-radius: 25px;">
+	  <div class="bottom-left">
+		<h1 class="sitetitle" style="color:#262626">𝔸𝕀trify</h1>
+		<p class="lead" style="color:#666666">
+			Progress with quality
+		</p>
+	  </div>
+	</div>
+	
+</div>
+-->
+
+<!-- Content
+================================================== -->
+<div class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=COVID-19 - What can we do to help?&url=http://localhost:4000/Covid_19_What_can_we_help/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/Covid_19_What_can_we_help/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/Covid_19_What_can_we_help/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        
+                        <a target="_blank" href="/blogs/author/tien-thanh"><img class="author-thumb" src="https://www.gravatar.com/avatar/617be440806088316139494d2ec1658b?s=250&d=mm&r=x" alt="Tien-Thanh"></a>
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="/blogs/author/tien-thanh">Tien-Thanh</a>&ensp;<a target="_blank" href="https://twitter.com/aitrify" class="btn follow">Follow</a>
+                        <p class="author-description" style="font-size:15px;font-family:'Courier New'; color:grey">Mechatronic Engineer. Data Science and Machine Learning Enthusiast. Runner.</p>
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">COVID-19 - What can we do to help?</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+
+            
+            <img class="featured-image img-fluid" src="/blogs/assets/images/flattening-the-curve.jpg" alt="COVID-19 - What can we do to help?">
+            
+
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <p>As I start this blog, COVID-19 is taking over the world, forcing most of us in a situation that we have never experienced before. We live in Belgium and right in the most damaged area. For previous month, our life was uprooted just as all of you: working from home, kids staying at home whole day, only go out for shopping once per week, … Thankfully, we are safe, and most of people in the small neighborhood also. Some advantages of this period to me: We allow to go out for running or cycling one per day: alone or with one family member - with respect to the social distancing restriction, which is perfect for my running. Even all the competition is cancelled, I can still practice and focus more on speed work. Moreover, isolation gives me precious time to think about my values, arrange my life, and having quality time with family - at home of course. That is why I open this blog, start writing and get back with my reading, learning further in data science and AI. Before starting all that, one of the question I asked myself is:</p>
+<h3 id="what-can-i-do-to-help-during-this-crisis">What can I do to help during this crisis?</h3>
+<p>As engineer, I want to help with my skills and my free time. You can read a lot of contribution from kids, from DYI person about making medical support parts from 3D printing. People in DIY forum sharing the design of DYI ventilator which you can make from Arduino, Raspberry Pi and wood and 3D printing part. I myself would like nothing more than to assist to solve this problem and help save lifes. But I don’t think home-made devices like above are answer at least in the hospital where I live. They have special protective equiments and don’t have any complain about lack of equiment yet, except the ICU beds. However, personally, I think medical devices and equiments are high standard, and intended for used by professional medical personnel, especially about the ventilator which is designed to maintain human life, without propoer testing and quality check, using improperly home-made devices could lead to fatal result.
+Other protective masks for regular person for example is different story, our city have plan just roll out today about giving reuseable masks to all the citizens for free. There are also other volunteering activities which I can join, and you too if it is possible, like: helping the seniors with groceries, maintain connection - with respect to social distancing rule they don’t feel isolation or loneliness, .. Other actions like donating to good cause organizations: food bank, COVID-19 research, helping nurses and doctors also help a lot during this period. I will also join some tele-conferences about COVID-19, data analysis to help prediction, finding solution in term of tracking patients, prevent broken social distancing rules …</p>
+<h3 id="what-can-robot-do-and-should-do-for-future-after-covid-19">What can robot do and should do for future after COVID-19?</h3>
+<p>COVID-19 will change the future and for sure it will speed up development and business in robotics.</p>
+<h4 id="in-laboratories">In laboratories</h4>
+<ul>
+  <li>There will be more and more researches for more and more dangerous virus than COVID-19, therefore laboratory automation is a must. Following in the product from ABB, YuMi mobile collaborative robot:</li>
+</ul>
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/SA_1vfH5UIk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
+<ul>
+  <li>How about specific robot for pipetting from Andrew Alliance SA:</li>
+</ul>
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/952yeU13NQA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
+<h4 id="in-hospitals">In hospitals</h4>
+<ul>
+  <li>Tele-presence with Boston Dynamics Spot quadruped robot - why not now? Want to know more, go to their <a href="https://github.com/boston-dynamics/bosdyn-hospital-bot/blob/master/Applications%20of%20Mobile%20Robotics%20during%20COVID-19.pdf">github pdf report</a></li>
+</ul>
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/sIp-FbLgnbE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
+<ul>
+  <li>Hospital assistant Moxi</li>
+</ul>
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/9YUgz9d6xDE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
+<ul>
+  <li>Or Social robot like Mabu - Personal health care companion</li>
+</ul>
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/A3XwzlvOW7k?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
+<ul>
+  <li>My take here: with the current hospital system, there is a long way for fully integration of the robot. As system engineer, I would design a full hospital automation system, where you have camera, sensors, and sound system for tele-presense and mornitor patient situation, and mobile carrier system to take care of logistics, and together with AI, and data analysis for helping the treatment.
+    <h4 id="in-supermarket">In supermarket</h4>
+  </li>
+  <li>Long overview about Retail robot from BBC</li>
+</ul>
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/0e0fdD5DpEI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
+<h4 id="on-the-road-not-necessary-self-driving-car">On the road, not necessary self-driving car</h4>
+<ul>
+  <li>Nuro R2 driverless vehicles is already heros during COVID-19</li>
+</ul>
+<p><iframe style="width:100%;" height="315" src="https://www.youtube.com/embed/X8ZF49H_Y14?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></p>
+<h3 id="final-thought">Final thought</h3>
+<p>It is not eay time for all of us. My thought go to the nurses and doctors in the frontline, and COVID-19 victims and their families. For all of you, stay safe, stay positive, don’t let the virus break your routine, your connection with the world. It is time for your family, for yourselves, to learn new things, make new things.</p>
+
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2020-04-24">24 Apr 2020</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/blogs/category/robot">robot</a>
+                    </li>
+                    
+                </ul>
+            </div>
+             <!--End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/blogs/tag/COVID-19">#COVID-19</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/blogs/tag/health">#health</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/blogs/tag/laboratory">#laboratory</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/blogs/tag/retail">#retail</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/blogs/tag/robot">#robot</a>
+                    </li>
+                    
+                    <li>
+                        <a class="smoothscroll" href="/blogs/tag/w17-2020">#w17-2020</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="/blogs/the_list_of_my_writings/"> &laquo; The List of My Writings</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="/blogs"> &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'aitrify-be'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+
+</div>
+
+<!-- Bottom Alert Bar
+================================================== -->
+
+<div class="alertbar">
+	<div class="container text-center">
+		<span><img src="/blogs/assets/images/logo.png" alt="𝔸𝕀trify" width="40" height="40"> &nbsp; Stay in touch to learn how we can work together.</span>
+        <form class="wj-contact-form validate" method="POST" action="https://www.elformo.com/forms/fc2374e1-f0fa-43ee-a7f2-01413f4aae25">
+            <div class="mc-field-group">
+            <input type="email" placeholder="Email" name="email" class="required email" id="email" autocomplete="on" data-required="true" required>
+            <input value="Let's connect!" name="submit" id="submit" type="Submit" class="heart" >
+            </div>
+        </form>
+	</div>
+</div>
+
+<!-- Tags Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h4 class="d-md-block align-self-center py-1 font-weight-light">Our topics <span class="d-none d-md-inline">→</span></h4>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/blogs/tag/project">project (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/blogs/tag/list">list (2)</a>
+                
+                    <a class="mt-1 mb-1" href="/blogs/tag/collection">collection (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/blogs/tag/robot">robot (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/blogs/tag/health">health (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/blogs/tag/COVID-19">COVID-19 (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/blogs/tag/retail">retail (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/blogs/tag/laboratory">laboratory (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/blogs/tag/w17-2020">w17-2020 (1)</a>
+                
+            
+            
+		</div>
+	</div>
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2019-2020 𝔸𝕀trify 
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">   
+                <a href="https://twitter.com/aitrify" <i class="fab fa-twitter fa-lg"></i></a><a>&ensp;</a>
+                <a href="https://github.com/t-thanh" <i class="fab fa-github fa-lg"></i></a><a>&ensp;</a>
+                <a href="https://www.linkedin.com/in/tienthanh/" <i class="fab fa-linkedin fa-lg"></i></a><a>&ensp;</a>
+                <a href="mailto:contact@aitrify.be" <i class="fa fa-envelope fa-lg"></i></a><a>&ensp;</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+
+<!-- Go to Top
+================================================== -->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-2x fa-chevron-up"></i>
+</button>
+
+<!-- End 
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    //// When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      var $target = $('html,body');
+      $target.animate({scrollTop: 0}, 500);
+    }    
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="/blogs/assets/js/mediumish.js"></script>
+
+
+
+<script src="/blogs/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+
+<script id="dsq-count-scr" src="//aitrify-be.disqus.com/count.js"></script>
+
+
+</body>
+</html>
