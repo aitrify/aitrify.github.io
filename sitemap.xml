@@ -9,4 +9,8 @@
 <url>
 <loc>http://localhost:4000/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/mnist/</loc>
+<lastmod>2020-06-04T23:41:18+02:00</lastmod>
+</url>
 </urlset>
