@@ -5,8 +5,8 @@
     <description>Progress with quality</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 04 Jun 2020 23:47:41 +0200</pubDate>
-    <lastBuildDate>Thu, 04 Jun 2020 23:47:41 +0200</lastBuildDate>
+    <pubDate>Tue, 09 Jun 2020 17:32:01 +0200</pubDate>
+    <lastBuildDate>Tue, 09 Jun 2020 17:32:01 +0200</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -137,7 +137,40 @@ Other protective masks for regular person for example is different story, our ci
     
       <item>
         <title>The List of My Projects</title>
-        <description>&lt;p&gt;I will publish one project at the end of the month. In the beginning, I had quite a bunch of previous projects to show so there would be the matter of writing, however, when they run out, creating a new one may take quite sometime, but I will keep updating the progress for each month. So stay tuned.&lt;/p&gt;
+        <description>&lt;style&gt;
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 60vh;
+  border: 1px solid green;
+  padding: 10px;
+}
+&lt;/style&gt;
+
+&lt;div&gt;
+
+&lt;svg id=&quot;mindmap&quot;&gt;&lt;/svg&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/npm/d3@5&quot;&gt;&lt;/script&gt;&lt;script src=&quot;https://cdn.jsdelivr.net/npm/markmap-lib@0.7.10/dist/browser/view.min.js&quot;&gt;&lt;/script&gt;&lt;script&gt;((data, init, items, opts) =&gt; {
+        const {
+          Markmap,
+          loadPlugins
+        } = window.markmap;
+        (init ? init(loadPlugins, items, opts) : Promise.resolve()).then(() =&gt; {
+          Markmap.create('svg#mindmap', null, data);
+        });
+      })({&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:1,&quot;v&quot;:&quot;markmap-lib&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:2,&quot;v&quot;:&quot;Links&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:3,&quot;v&quot;:&quot;&lt;a href=\&quot;https://markmap.js.org/\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener noreferrer\&quot;&gt;https://markmap.js.org/&lt;/a&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:3,&quot;v&quot;:&quot;&lt;a href=\&quot;https://github.com/gera2ld/markmap-lib\&quot; title=\&quot;\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener noreferrer\&quot;&gt;GitHub&lt;/a&gt;&quot;}]},{&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:2,&quot;v&quot;:&quot;Related&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:3,&quot;v&quot;:&quot;&lt;a href=\&quot;https://github.com/gera2ld/coc-markmap\&quot; title=\&quot;\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener noreferrer\&quot;&gt;coc-markmap&lt;/a&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:3,&quot;v&quot;:&quot;&lt;a href=\&quot;https://github.com/gera2ld/gatsby-remark-markmap\&quot; title=\&quot;\&quot; target=\&quot;_blank\&quot; rel=\&quot;noopener noreferrer\&quot;&gt;gatsby-remark-markmap&lt;/a&gt;&quot;}]},{&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:2,&quot;v&quot;:&quot;Features&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:3,&quot;v&quot;:&quot;links&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:3,&quot;v&quot;:&quot;&lt;strong&gt;inline&lt;/strong&gt; &lt;del&gt;text&lt;/del&gt; &lt;em&gt;styles&lt;/em&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:3,&quot;v&quot;:&quot;multiline&lt;br/&gt;text&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:3,&quot;v&quot;:&quot;&lt;code&gt;inline code&lt;/code&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:3,&quot;v&quot;:&quot;&lt;pre&gt;&lt;code class=\&quot;language-js\&quot;&gt;console.log('code block');\n&lt;/code&gt;&lt;/pre&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:3,&quot;v&quot;:&quot;MathJax - &lt;code&gt;\\(x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}\\)&lt;/code&gt;&quot;}]}]},(loadPlugins, items, opts) =&gt; loadPlugins(items, opts),[&quot;mathJax&quot;],{&quot;mathJax&quot;:true})&lt;/script&gt;
+
+&lt;/div&gt;
+&lt;div&gt;
+&lt;iframe src=&quot;http://127.0.0.1:4000/blogs/mnist/&quot; title=&quot;Digit Recognition WebApp&quot; width=&quot;100%&quot; height=&quot;1000px&quot;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I will publish one project at the end of the month. In the beginning, I had quite a bunch of previous projects to show so there would be the matter of writing, however, when they run out, creating a new one may take quite sometime, but I will keep updating the progress for each month. So stay tuned.&lt;/p&gt;
 </description>
         <pubDate>Wed, 22 Apr 2020 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/the_list_of_my_projects/</link>
