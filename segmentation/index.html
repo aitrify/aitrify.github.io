@@ -89,6 +89,10 @@
   }
 
   button {
+	text-decoration: none;
+	border-radius: 10px;
+	box-shadow: 2px 2px 15px -5px hsla(0, 0%, 0%, 1);
+	width: fit-content;
     text-align: center;
     padding: 8px 12px 8px 12px;
     font-size: 100%; }
@@ -108,7 +112,10 @@
     </section>
 
     <section>
-      <p class='section-head'>Click on the tabs to try out.</p>
+      <p class='section-head'>Segmentation with 20 different classes as below. Click on the tab to try out.</p>
+    <section>
+      <p><img style='width: 100%; object-fit: contain' src="/assets/images/voccmap.png"/></p>
+    </section>
 <!--
       <p>
         This demo uses the pretrained <a href="https://github.com/DrSleep/light-weight-refinenet">Light-Weight
@@ -135,13 +142,22 @@
       <img id="inpimg0"/>
       <canvas id="segm0" class="canvas"></canvas>
     </section>
-    <section>
-      <p class='section-head'>Segmentation Colour Map</p>
-      <p><img style='width: 100%; object-fit: contain' src="/assets/images/voccmap.png"/></p>
-    </section>
-
     </div>
-
+	<br>
+	<br>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<br>
+	
+    <section>
+      <p class='section-head'>Segmentation with 40 different classes as below, also estimate depth and surface normals. Click on the tab to try out.</p>
+    <section>
+	<section>
+	  <p><img style='width: 100%; object-fit: contain' src="/assets/images/nyudcmap0.png"/></p>
+	  <p><img style='width: 100%; object-fit: contain' src="/assets/images/nyudcmap1.png"/></p>
+	</section>
     <button class="collapsible">Segmentation + Depth + Surface Normals (NYUD-v2)</button>
     <div class="content">
 
@@ -156,11 +172,6 @@
             <canvas id="segm" class="canvas"></canvas>
             <canvas id="depth" class="canvas"></canvas>
             <canvas id="norm" class="canvas"></canvas>
-        </section>
-        <section>
-          <p class='section-head'>Segmentation Colour Maps</p>
-          <p><img style='width: 100%; object-fit: contain' src="/assets/images/nyudcmap0.png"/></p>
-          <p><img style='width: 100%; object-fit: contain' src="/assets/images/nyudcmap1.png"/></p>
         </section>
     </div>
 
