@@ -1,42 +1,42 @@
 
 var documents = [{
     "id": 0,
-    "url": "http://localhost:4000/404.html",
+    "url": "aitrify.be/blogs/404.html",
     "title": "404",
     "body": "404 Page does not exist!Please use the search bar at the top or visit our homepage! "
     }, {
     "id": 1,
-    "url": "http://localhost:4000/about",
+    "url": "aitrify.be/blogs/about",
     "title": "Đây là đâu và tôi là ai?",
     "body": "About me: I'm Thành. I'm engineer, husband, father, also runner, reader, learner, creator, and writer. This blog is about me as a writer. Our Location: Gladioolstraat3800 Sint-TruidenLimburg, BelgiumLoading. . . "
     }, {
     "id": 2,
-    "url": "http://localhost:4000/categories",
+    "url": "aitrify.be/blogs/categories",
     "title": "Categories",
     "body": ""
     }, {
     "id": 3,
-    "url": "http://localhost:4000/",
+    "url": "aitrify.be/blogs/",
     "title": "Blogs",
-    "body": "      Featured:               All Stories:             "
+    "body": "{% if page. url == “/” %}       Featured:       {% for post in site. posts %}    {% if post. featured == true %}      {% include featuredbox. html %}    {% endif %}  {% endfor %}  {% endif %}       All Stories:         {% for post in paginator. posts %}    {% include postbox. html %}    {% endfor %}    {% include pagination. html %}"
     }, {
     "id": 4,
-    "url": "http://localhost:4000/search/",
+    "url": "aitrify.be/blogs/search/",
     "title": "Archive",
     "body": "  Posts with {{ page. type }} '{{ page. title }}': {% for post in page. posts %}  {% include postbox. html %}{% endfor %}      "
     }, {
     "id": 5,
-    "url": "http://localhost:4000/search.json",
+    "url": "aitrify.be/blogs/search.json",
     "title": "",
     "body": "[ {% for post in site. posts %}   {% comment %} Determine post URL {% endcomment %}   {% if post. external_url %}    {% assign post_url = post. external_url %}   {% else %}    {% assign post_url = post. url | relative_url %}   {% endif %}  {   “title”  : “{{ post. title | escape }}”,   “category” : “{{ post. category }}”,   “tags”   : “{{ post. tags | join: ‘, ‘ }}”,   “url”   : “{{ post_url}}”,   “date”   : “{{ post. date }}”  } {% unless forloop. last %},{% endunless %} {% endfor %}] "
     }, {
     "id": 6,
-    "url": "http://localhost:4000/search",
+    "url": "aitrify.be/blogs/search",
     "title": "Search",
     "body": ""
     }, {
     "id": 7,
-    "url": "http://localhost:4000/robots.txt",
+    "url": "aitrify.be/blogs/robots.txt",
     "title": "",
     "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, ];
